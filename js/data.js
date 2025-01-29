@@ -63,21 +63,21 @@ const menuData = [
         "price":"15"
     },
     {
-        "image": "assets/images/menu/tadjines/Mutawamcasserole.jpg",
+        "image": "assets/images/menu/tadjine/Mutawam casserole.jpg",
         "category": "Tadjines",
         "title": "Mutawam casserole",
         "description": "Garlic-rich traditional casserole.",
         "price":"15"
     },
     {
-        "image": "assets/images/menu/tadjines/TadjineZitoune.jpg",
+        "image": "assets/images/menu/tadjine/Tadjine Zitoune.jpg",
         "category": "Tadjines",
         "title": "Tadjine Zitoune",
         "description": "Algerian olive stew with tender meat.",
         "price":"15"
     },
     {
-        "image": "assets/images/menu/tadjines/TajineJelbana.jpg",
+        "image": "assets/images/menu/tadjine/Tadjine Jelbana.jpg",
         "category": "Tadjines",
         "title": "Tajine Jelbana",
         "description": "Green pea stew with traditional spices.",

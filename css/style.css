@@ -878,14 +878,14 @@ Welcome image Title Styling
 /* Responsive Layout for Mobile Screens */
 @media (max-width: 768px) {
     .back-button{
-        margin-left: 8%;
+        margin-left: 6.5%;
         font-size: large;
         
     }
     
     .return-section {
         margin-top: 10%;
-        margin-left: 9%;
+        margin-left: 7.5%;
 
     }
 

@@ -146,22 +146,22 @@ const pages = {
         <div class="social-container">
 
     <div class="social-item">
-        <a href="https://maps.app.goo.gl/5WWoQBYTkF8RdypK7" target="_blank">
+        <a href="https://maps.app.goo.gl/5WWoQBYTkF8RdypK7" target="#">
             <img src="./assets/icons/maps.png" alt="">
         </a>
     </div>
     <div class="social-item">
-        <a href="https://www.talabat.com/uae/wahran-restaurant-cafe" target="_blank">
+        <a href="https://www.talabat.com/uae/wahran-restaurant-cafe" target="#">
             <img src="./assets/icons/talabat.png" alt="">
         </a>
     </div>
     <div class="social-item">
-        <a href="" target="_blank">
+        <a href="" target="#">
             <img src="./assets/icons/tripadvisor.png" alt="">
         </a>
     </div>
     <div class="social-item">
-        <a href="" target="_blank">
+        <a href="" target="#">
             <img src="./assets/icons/fb.png" alt="">
         </a>
     </div>
@@ -187,6 +187,16 @@ function loadPage(page) {
     } else if (page === "view") {
         loadViewPage();
     }
+
+    // 🔹 Auto-scroll to top on page load
+    window.scrollTo({ top: 10, behavior: "smooth" });
+
+    // 🔹 Attach click event to all <a> tags again (since content is dynamically loaded)
+    document.querySelectorAll("a[href]").forEach(link => {
+        link.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
 }
 
 
@@ -278,6 +288,11 @@ function loadViewPage() {
     // Generate View Content
     const viewContent = `
     <div class="return-menu">
+    <div class="back-button">
+    <a href="#menu?category=${category}" class="back-to-menu" data-page="menu">
+    <i class="fa fa-arrow-circle-left" aria-hidden="true"> </i>
+     Back </a>
+    </div>
         <div class="return-section">
             <a href="#menu?category=${category}" class="back-to-menu" data-page="menu">Home / Categories / ${category}</a>
             <span class="back-to-menu"> / ${title}</span>

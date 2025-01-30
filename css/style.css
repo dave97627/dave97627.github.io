@@ -621,6 +621,18 @@ Welcome image Title Styling
 /* -------------- View page------------- */
 
 /* item Container */
+.back-button{
+    margin: 2% 0%;
+    font-size: large;
+    
+}
+
+.back-button a{
+    text-decoration: underline;
+    font-size: large;
+    
+}
+
 .return-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -743,6 +755,7 @@ Welcome image Title Styling
     color: #1a0d33;
     font-size: 2rem;
     margin: 0%;
+    text-decoration: underline;
 }
 
 
@@ -864,6 +877,12 @@ Welcome image Title Styling
 
 /* Responsive Layout for Mobile Screens */
 @media (max-width: 768px) {
+    .back-button{
+        margin-left: 8%;
+        font-size: large;
+        
+    }
+    
     .return-section {
         margin-top: 10%;
         margin-left: 9%;
@@ -887,8 +906,9 @@ Welcome image Title Styling
     }
 
     .related-card h3 {
-        text-align: justify;
+        text-align: left;
         max-width: 60%;
+        margin-left: 5%;
     }
 
 
@@ -896,6 +916,7 @@ Welcome image Title Styling
         margin: 0%;
         width: 50%;
         border-radius: 0%;
+        margin-left: 5%;
 
     }
 
@@ -911,20 +932,25 @@ Welcome image Title Styling
 
     .item-right-section h3 {
         font-size: 2.5rem;
+        margin-left: 3%;
         /* Scale down headline font size */
     }
 
     .item-right-section p,
     .item-right-section .tagline {
         font-size: large;
+        margin-left: 3%;
         /* Scale down paragraph font size */
     }
 
     .related {
-        margin-left: 12%;
+        margin-left: 16%;   
     }
 
+    .related-card p{
+        margin-left: 4%;
 
+    }
 
 }
 
@@ -1325,7 +1351,7 @@ footer {
 
 /* links to social media apps and maps*/
 .social-header{
-    padding-top: 5%;
+    margin-top: 5%;
 }
 
 .social-container {

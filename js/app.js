@@ -193,15 +193,7 @@ function loadPage(page) {
         loadViewPage();
     }
 
-    // 🔹 Auto-scroll to top on page load
-    window.scrollTo({ top: 10, behavior: "smooth" });
-
-    // 🔹 Attach click event to all <a> tags again (since content is dynamically loaded)
-    document.querySelectorAll("a[href]").forEach(link => {
-        link.addEventListener("click", function () {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    });
+    
 }
 
 

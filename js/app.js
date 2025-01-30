@@ -1,3 +1,8 @@
+// Add a timestamp to the JS file URL to force a fresh fetch
+let script = document.createElement('script');
+script.src = 'app.js?v=' + new Date().getTime();  // Adds a unique timestamp query
+document.head.appendChild(script);
+
 // References
 const app = document.getElementById("app");
 

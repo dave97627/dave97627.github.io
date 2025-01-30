@@ -19,6 +19,13 @@
     <footer id="footer"></footer>
 
     <!-- Scripts -->
+    <script>
+        // Add a timestamp to the JS file URL to force a fresh fetch
+        let script = document.createElement('script');
+        script.src = 'js/app.js?v=' + new Date().getTime();  // Timestamp query string
+        document.head.appendChild(script);  // You can also use document.body.appendChild(script);
+     </script>
+     
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
 </body>

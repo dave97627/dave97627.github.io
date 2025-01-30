@@ -178,7 +178,7 @@ function loadPage(page) {
     clearHash('view,menu');
 
     // Load the page content
-    app.innerHTML = pages[page] || `<h1>404 - Page Not Found</h1>`;
+    app.innerHTML = pages[page] || `<h1>Oops ! - Page Not Found</h1>`;
 
     // Additional logic for specific pages
     if (page === "menu") {

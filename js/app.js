@@ -188,7 +188,15 @@ function loadPage(page) {
         loadViewPage();
     }
 
-    
+    //  Auto-scroll to top on page load
+    window.scrollTo({ top: 10, behavior: "smooth" });
+
+    // Attach click event to all <a> tags again (since content is dynamically loaded)
+    document.querySelectorAll("a[href]").forEach(link => {
+        link.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
 }
 
 
@@ -502,17 +510,3 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
-// Add a timestamp to the JS file URL to force a fresh fetch
-let script = document.createElement('script');
-script.src = 'app.js?v=' + new Date().getTime();  // Adds a unique timestamp query
-document.head.appendChild(script);
-
-self.addEventListener('fetch', function(event) {
-    if (event.request.url.includes('app.js')) {
-        // Force a fetch from the network, bypassing cache
-        event.respondWith(fetch(event.request));
-    } else {
-        // Default caching strategy
-        event.respondWith(caches.match(event.request) || fetch(event.request));
-    }
-});

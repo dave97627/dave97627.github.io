@@ -3,6 +3,17 @@ let script = document.createElement('script');
 script.src = 'app.js?v=' + new Date().getTime();  // Adds a unique timestamp query
 document.head.appendChild(script);
 
+self.addEventListener('fetch', function(event) {
+    if (event.request.url.includes('app.js')) {
+        // Force a fetch from the network, bypassing cache
+        event.respondWith(fetch(event.request));
+    } else {
+        // Default caching strategy
+        event.respondWith(caches.match(event.request) || fetch(event.request));
+    }
+});
+
+
 // References
 const app = document.getElementById("app");
 

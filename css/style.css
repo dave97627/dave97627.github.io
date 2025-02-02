@@ -374,7 +374,7 @@ Welcome image Title Styling
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .midcontent-section {
         padding: 30px 15px;
     }
@@ -568,7 +568,7 @@ Welcome image Title Styling
 }
 
 /* Media Query for Mobile / Small Screens */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #menu-category {
         width: auto;
         /* Auto width for smaller screens */

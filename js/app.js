@@ -118,6 +118,23 @@ const pages = {
                 <button class="menu-btn">Explore Our Menu</button>
             </div>
         </div>
+
+
+        <div class="end-container">
+        <div class="base-image-wrapper">
+            <div class="black-background">
+            <div class="text-content">
+                    <h2>Experiencec the True Taste of Fine Dining</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="overlay-image-wrapper">
+                <img src="./assets/images/bg/algerian food.jpg" alt="Overlay image" class="overlay-image">
+            </div>
+        </div>
+    </div>
+
+
     </div>
     `,
     menu: `

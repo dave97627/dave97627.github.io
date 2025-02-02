@@ -64,27 +64,6 @@ const pages = {
             <img src="assets/images/home/mid-section.jpeg" alt="Mediterranean dishes collection">
         </div>
     </div>
-    
-    <div class="resto-courousal-container">
-        <div class="resto-carousal">
-            <input type="radio" name="position" checked />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <input type="radio" name="position" />
-            <main id="carousel">
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <div class="item"></div>
-                <main>
-        </div>
-        <br>
-        <br>
-    
-    
-    
         <div class="mid-container">
             <div class="mid-image">
                 <div class="list-wrapper">
@@ -140,12 +119,6 @@ const pages = {
             </div>
         </div>
     </div>
-
-
-
-
-        
-
     `,
     menu: `
         <div id="menu">
@@ -278,7 +251,7 @@ function loadPage(page) {
         });
     });
 
-    
+
 }
 
 
@@ -428,7 +401,7 @@ function displayRelatedDishes(category, currentTitle) {
     const filteredData = menuData.filter(item => item.category === category && item.title !== currentTitle);
 
     // Render the filtered menu items
-    menuCardsContainer.innerHTML = filteredData.length > 0 
+    menuCardsContainer.innerHTML = filteredData.length > 0
         ? filteredData.map(item => `
             <div class="related-card" data-category="${item.category}">
                 <a href="#view?category=${encodeURIComponent(item.category)}&title=${encodeURIComponent(item.title)}&price=${encodeURIComponent(item.price)}" class="menu-item-link">
@@ -560,7 +533,7 @@ function loadFooter() {
         </div>  
     `;
     document.getElementById('footer').innerHTML = footerHTML;
-    
+
 
     // Scroll to Top functionality
     document.addEventListener("scroll", function () {

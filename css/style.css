@@ -245,8 +245,15 @@ Welcome image Title Styling
 
     .restaurant-image {
         width: 100%;
+        height: 500px;
 
     }
+
+    /* resto Logo Image */
+.logo-image {
+    width: 100%;
+
+}
 
     .right-section {
         text-align: left;

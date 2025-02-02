@@ -177,7 +177,7 @@ header {
 /* resto Logo Image */
 .logo-image {
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -10%);
     /* Center the logo above the restaurant image */
@@ -1543,13 +1543,15 @@ footer {
 @media (max-width: 768px) {
     .text-content h2 {
         font-size: x-large;
-        padding: 10%;
+        margin-top: 100%;
+        
+        text-align: left;
         
     }
 
     .end-container {
-        width:auto;
-        display: grid;
+        width: auto;
+        display: flexbox;
     }
 
     .base-image-wrapper {
@@ -1561,6 +1563,6 @@ footer {
     }
 
     .overlay-image-wrapper {
-        width: min(550px, 40vw);
+        width: 50%;
     }
 }

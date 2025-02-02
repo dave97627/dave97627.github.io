@@ -124,7 +124,7 @@ const pages = {
         <div class="base-image-wrapper">
             <div class="black-background">
             <div class="text-content">
-                    <h2>Experiencec the True Taste of Fine Dining</h2>
+                    <h2>Experience the True Taste of Fine Dining</h2>
                     <p></p>
                 </div>
             </div>

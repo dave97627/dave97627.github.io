@@ -18,12 +18,12 @@ function clearAllHash() {
 // Pages
 const pages = {
     home: `
-<div class="main-container" align="center" style="">
+    <div class="main-container" align="center" style="">
         <!-- Left Section -->
         <div class="left-section">
             <div class="image-container">
                 <img src="assets/logo/logo-nobg.png" alt="Wahran Restaurant & Cafe Logo" class="logo-image" />
-                <img src="assets/images/bg/home.jpg" alt="Restaurant" class="restaurant-image" />
+                <img src="assets/images/bg/home.jpeg" alt="Restaurant" class="restaurant-image" />
             </div>
         </div>
     
@@ -44,7 +44,7 @@ const pages = {
             </p>
         </div>
     </div>
-
+    
     <div class="mid-container">
         <div class="midcontent-section">
             <h2 class="title">
@@ -61,10 +61,90 @@ const pages = {
             <button class="menu-btn">Explore Our Menu</button>
         </div>
         <div class="mid-image">
-            <img src="assets/images/bg/Algerian Salad Dz.jpg" alt="Mediterranean dishes collection">
+            <img src="assets/images/home/mid-section.jpeg" alt="Mediterranean dishes collection">
+        </div>
+    </div>
+    
+    <div class="resto-courousal-container">
+        <div class="resto-carousal">
+            <input type="radio" name="position" checked />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <input type="radio" name="position" />
+            <main id="carousel">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <main>
+        </div>
+        <br>
+        <br>
+    
+    
+    
+        <div class="mid-container">
+            <div class="mid-image">
+                <div class="list-wrapper">
+                    <ul class="list">
+                        <li class="item">
+                            <div class="corousal-content">
+                                <img src="assets/images/home/c1.jpeg" alt="Mediterranean dishes collection">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="corousal-content">
+                                <img src="assets/images/home/c2.jpeg" alt="Mediterranean dishes collection">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="corousal-content">
+                                <img src="assets/images/home/c3.jpeg" alt="Mediterranean dishes collection">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="corousal-content">
+                                <img src="assets/images/home/c4.jpg" alt="Mediterranean dishes collection">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="corousal-content">
+                                <img src="assets/images/home/c5.jpeg" alt="Mediterranean dishes collection">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="corousal-content">
+                                <img src="assets/images/home/c6.jpg" alt="Mediterranean dishes collection">
+                            </div>
+                        </li>
+                    </ul>
+                    <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
+                    <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
+                </div>
+            </div>
+            <div class="midcontent-section">
+                <h2 class="title">
+                    <span>AUTHENTIC</span>
+                    <span>TIMELESS</span>
+                    <span>EXQUISITE</span>
+                </h2>
+                <p class="description">
+                    Embark on a culinary journey through the heart of Algeria. Our menu celebrates the rich flavors of
+                    Mediterranean and Algerian traditions, featuring a selection of carefully curated seafood and local
+                    delicacies.
+                    A dining experience that brings together culture, passion, and taste.
+                </p>
+                <button class="menu-btn">Explore Our Menu</button>
+            </div>
         </div>
     </div>
 
+
+
+
+        
 
     `,
     menu: `
@@ -197,6 +277,8 @@ function loadPage(page) {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     });
+
+    
 }
 
 

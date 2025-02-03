@@ -422,10 +422,10 @@ function displayRelatedDishes(category, currentTitle) {
     menuCardsContainer.innerHTML = filteredData.length > 0
         ? filteredData.map(item => `
             <div class="related-card" data-category="${item.category}">
-                <a href="#view?category=${encodeURIComponent(item.category)}&title=${encodeURIComponent(item.title)}&price=${encodeURIComponent(item.price)}" class="menu-item-link">
+                <a href="#view?category=${encodeURIComponent(item.category)}&title=${encodeURIComponent(item.title)}&price=${encodeURIComponent(item.price)}" class="menu-item-link" style="text-decoration: none">
                     <img src="${item.image}" alt="${item.title}">
-                </a>
                 <h3>${item.title}</h3>
+                </a>
                 <p>AED ${item.price}</p>
             </div>
         `).join("")

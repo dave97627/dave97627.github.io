@@ -677,7 +677,7 @@ Welcome image Title Styling
     align-items: right;
     object-fit: fill;
     padding: 2%;
-    margin: 0%;
+    margin-top: 2%;
 }
 
 /* Left Section */
@@ -920,7 +920,7 @@ Welcome image Title Styling
         grid-template-columns: 1fr;
         /* Stack columns vertically */
         align-items: center;
-        margin: 0%;
+        margin-top: 2%;
     }
 
     .item-image-container img {

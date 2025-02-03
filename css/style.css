@@ -12,7 +12,7 @@ body {
     font-family: 'CustomFont';
     margin: 0;
     padding: 0;
-    background: url('../assets/images/bg/bg.jpg') no-repeat fixed;
+    background: url('../assets/images/bg/body.gif') no-repeat fixed;
     background-repeat: repeat;
     background-size: cover;
     /* Ensures the image covers the entire screen */
@@ -43,7 +43,7 @@ header {
     font-size: 16px;
     padding: 0;
     position: relative;
-    background: url('../assets/images/bg/footer.jpg') no-repeat fixed;
+    background: url('../assets/images/bg/div.jpg') no-repeat fixed;
     /* background: url('../assets/images/bg/footer.jpg') no-repeat center center fixed; */
     
 
@@ -140,7 +140,7 @@ header {
     gap: 2rem;
     background-color: #0b2747;
     /* Solid blue background */
-    background: url('../assets/images/bg/footer.jpg') no-repeat fixed;
+    background: url('../assets/images/bg/div.jpg') no-repeat fixed;
     padding: 2rem;
     align-items: right;
     padding-top: 8%;
@@ -312,7 +312,7 @@ Welcome image Title Styling
     flex: 1;
     padding: 60px 40px;
     background: #0a192f;
-    background: url('../assets/images/bg/end-section.jpg') no-repeat center center fixed;
+    background: url('../assets/images/bg/banner.jpg') no-repeat center center fixed;
 
     color: #e2b67c;
     margin-top: -30px;
@@ -991,7 +991,7 @@ Welcome image Title Styling
 
 /* Footer Styles */
 footer {
-    background: url('../assets/images/bg/footer.jpg') no-repeat fixed;
+    background: url('../assets/images/bg/div.jpg') no-repeat fixed;
 
     /* Retained original color scheme */
     color: white;
@@ -1427,6 +1427,7 @@ footer {
     list-style: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    animation: scroll 15s linear infinite;
   }
   
   .item {
@@ -1434,6 +1435,8 @@ footer {
     width: 100%;
     scroll-snap-align: center;
   }
+
+  
   
   .corousal-content {
     display: flex;
@@ -1514,7 +1517,7 @@ footer {
 }
 
 .black-background {
-    background: url('../assets/images/bg/end-section.jpg') no-repeat center center fixed;
+    background: url('../assets/images/bg/banner.jpg') no-repeat center center fixed;
     width: auto;
     height: 600px;
     background-color: black;

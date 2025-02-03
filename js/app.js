@@ -142,10 +142,11 @@ const pages = {
             <h2 align="center">Bon Appéti</h2>
             <div id="menu-container" align="center">
             <select name="menu-category" id="menu-category" align="center">
-                <option value="All">View Categories</option>
-                <option value="All">All Items</option>
+                <option value="All">All Items ♥</option>
+                <option value="Most Popular">Most Popular 🔥</option>
                 <option value="Algerian Traditional">Algerian Traditional</option>
                 <option value="Salads">Salads</option>
+                <option value="Soups">Soups</option>
                 <option value="Couscous">Couscous</option>
                 <option value="Tadjines">Tadjines</option>
                 <option value="Special Dishes">Special Dishes</option>

@@ -1,4 +1,44 @@
 const menuData = [
+    // Most popular
+
+    {
+        "image": "assets/images/menu/algeriantraditional/Kesra Algerian.jpg",
+        "category": "Most Popular",
+        "title": "Kesra Algerian",
+        "description": "Delicious dish with fresh ingredients.",
+        "price":"15"
+    },
+    {
+        "image": "assets/images/menu/algeriantraditional/Mhadjeb.jpg",
+        "category": "Most Popular",
+        "title": "Mhadjeb",
+        "description": "Flaky Algerian flatbread with a savory filling.",
+        "price":"15"
+    },
+    {
+        "image": "assets/images/menu/salads/Hmiss Mechoui Salad.png",
+        "category": "Most Popular",
+        "title": "Hmiss Mechoui Salad",
+        "description": "Roasted peppers and tomatoes with garlic and olive oil.",
+        "price":"15"
+    },
+    {
+        "image": "assets/images/menu/specialdishes/Lubia (White Bean) Dish.jpg",
+        "category": "Most Popular",
+        "title": "Lubia (White Bean) Dish",
+        "description": "A hearty white bean stew.",
+        "price":"15"
+    },
+    {
+        "image": "assets/images/menu/soups/Chroba Frik.jpg",
+        "category": "Most Popular",
+        "title": "Chroba Frik",
+        "description": "Traditional green wheat soup.",
+        "price":"15"
+    },
+
+    // Algerian traditional
+
     {
         "image": "assets/images/menu/algeriantraditional/Kesra Algerian.jpg",
         "category": "Algerian Traditional",
@@ -14,26 +54,70 @@ const menuData = [
         "price":"15"
     },
     {
-        "image": "assets/images/menu/salads/Chroba Frik.jpg",
+        "image": "assets/images/menu/algeriantraditional/Brick Annabi.jpg",
+        "category": "Algerian Traditional",
+        "title": "Brick Annabi",
+        "description": "A golden, crispy pastry bursting with a savory blend of egg, herbs, and spices.",
+        "price":"15"
+    },
+    {
+        "image": "assets/images/menu/algeriantraditional/Bourek Roll.jpg",
+        "category": "Algerian Traditional",
+        "title": "Bourek Roll",
+        "description": "Crispy pastry filled with savory minced meat and spices.",
+        "price":"15"
+    },
+
+    // Salads
+
+    {
+        "image": "assets/images/menu/salads/Algerian Salad Dz.jpg",
         "category": "Salads",
+        "title": "Algerian Salad Dz",
+        "description": "Crisp vegetables tossed in a zesty, spiced vinaigrette.",
+        "price":"15"
+    },
+    {
+        "image": "assets/images/menu/salads/Salad Macedoin.jpg",
+        "category": "Salads",
+        "title": "Salad Macedoin",
+        "description": "A creamy mix of diced vegetables in a light mayo dressing.",
+        "price":"15"
+    },
+    {
+        "image": "assets/images/menu/salads/Hmiss Mechoui Salad.png",
+        "category": "Salads",
+        "title": "Hmiss Mechoui Salad",
+        "description": "Roasted peppers and tomatoes with garlic and olive oil.",
+        "price":"15"
+    },
+
+    // Soups
+
+    {
+        "image": "assets/images/menu/soups/Chroba Frik.jpg",
+        "category": "Soups",
         "title": "Chroba Frik",
         "description": "Traditional green wheat soup.",
         "price":"15"
     },
     {
-        "image": "assets/images/menu/salads/Chorba Hrira.jpg",
-        "category": "Salads",
+        "image": "assets/images/menu/soups/Chorba Hrira.jpg",
+        "category": "Soups",
         "title": "Chorba Hrira",
         "description": "A classic hearty Algerian soup.",
         "price":"15"
     },
     {
-        "image": "assets/images/menu/salads/Lentil Soup.jpg",
-        "category": "Salads",
+        "image": "assets/images/menu/soups/Lentil Soup.jpg",
+        "category": "Soups",
         "title": "Lentil Soup",
         "description": "Nutritious soup with a rich taste.",
         "price":"15"
     },
+
+    // Concouse
+
     {
         "image": "assets/images/menu/couscous/Couscous Beef.jpg",
         "category": "Couscous",
@@ -62,6 +146,9 @@ const menuData = [
         "description": "A grand couscous with meats and vegetables.",
         "price":"15"
     },
+
+    // Tadjines
+
     {
         "image": "assets/images/menu/tadjine/Mutawam casserole.jpg",
         "category": "Tadjines",
@@ -83,6 +170,9 @@ const menuData = [
         "description": "Green pea stew with traditional spices.",
         "price":"15"
     },
+
+    // Special dishes
+
     {
         "image": "assets/images/menu/specialdishes/Chakhchoukha Beskria Beef.jpg",
         "category": "Special Dishes",
@@ -132,6 +222,9 @@ const menuData = [
         "description": "Meaty stew in a rich, spicy sauce.",
         "price":"15"
     },
+
+    // International dishes
+
     {
         "image": "assets/images/menu/internationalfood/Grilled Shrimp With Hot Sauce.jpg",
         "category": "International food",
@@ -154,6 +247,13 @@ const menuData = [
         "price":"15"
     },
     {
+        "image": "assets/images/menu/internationalfood/Poulet Farci.jpg",
+        "category": "International food",
+        "title": "Poulet Farci (Stuffed Chicken) With Minced Meat And Mushrooms",
+        "description": "Tender chicken stuffed with seasoned minced meat and mushrooms.",
+        "price":"15"
+    },
+    {
         "image": "assets/images/menu/internationalfood/Scallops With Sauce.jpg",
         "category": "International food",
         "title": "Scallops With Sauce",
@@ -167,6 +267,9 @@ const menuData = [
         "description": "Crispy scallops with a veggie medley.",
         "price":"15"
     },
+
+    // Sandwiches
+
     {
         "image": "assets/images/menu/sandwiches/French Fries Omelet.jpg",
         "category": "Sandwiches",
@@ -188,6 +291,9 @@ const menuData = [
         "description": "Spiced sausage in a hearty sandwich.",
         "price":"15"
     },
+
+    // Tacos
+
     {
         "image": "assets/images/menu/tacos/Minced Beef Taco.jpg",
         "category": "Tacos",
@@ -209,6 +315,9 @@ const menuData = [
         "description": "Cocktail of chicken and beef taco with exciting flavors.",
         "price":"15"
     },
+
+    // Panini
+
     {
         "image": "assets/images/menu/panini/Tuna Panini.jpg",
         "category": "Panini",
@@ -223,6 +332,9 @@ const menuData = [
         "description": "Savory panini with minced beef.",
         "price":"15"
     },
+
+    // Traditional sweets
+
     {
         "image": "assets/images/menu/traditionalsweets/Cigar Almonds And Walnuts.jpg",
         "category": "Traditional sweets",
@@ -230,6 +342,9 @@ const menuData = [
         "description": "Sweet treats with almonds and walnuts.",
         "price":"15"
     },
+    
+    //Beverages
+
     {
         "image": "assets/images/menu/beverages/Water 500 Ml.jpg",
         "category": "Beverages",

@@ -1,4 +1,7 @@
 const menuData = [
+    // dish images in assets/images/menu
+    // all dish images file names should be same as the title:
+    // all dish images 768X768 in JPG format
     // Most popular
 
     {

@@ -368,7 +368,6 @@ function loadViewPage() {
     </div>
         <div class="return-section">
             <a href="#menu?category=${category}" class="back-to-menu" data-page="menu">Home / Categories / ${category}</a>
-            <span class="back-to-menu"> / ${title}</span>
         </div>
     </div>
 

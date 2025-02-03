@@ -16,7 +16,7 @@ jobs:
     - name: Deploy via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftpupload.net
+        server: ftp.infinityfree.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: /home/vol1_2/infinityfree.com/if0_38204214/htdocs

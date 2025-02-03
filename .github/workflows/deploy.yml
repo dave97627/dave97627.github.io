@@ -1,9 +1,9 @@
-name: FTP Deploy to infinityfree server
+name: FTP Deploy to Prod Server
 
 on:
   push:
     branches:
-      - root  # Change to your branch name if different
+      - root  # branch name
 
 jobs:
   deploy:
@@ -19,5 +19,5 @@ jobs:
         server: ftp.infinityfree.com
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./
-        server-dir: /htdocs/
+        local-dir: ./ #repo directory
+        server-dir: /htdocs/ #server directory

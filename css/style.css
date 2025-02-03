@@ -312,6 +312,8 @@ Welcome image Title Styling
     flex: 1;
     padding: 60px 40px;
     background: #0a192f;
+    background: url('../assets/images/bg/end-section.jpg') no-repeat center center fixed;
+
     color: #e2b67c;
     margin-top: -30px;
     margin-bottom: 30px;
@@ -898,6 +900,10 @@ Welcome image Title Styling
         font-size: large;
         
     }
+
+    .tagline{
+        margin: 0%;
+    }
     
     .return-section {
         margin-top: 10%;
@@ -918,19 +924,26 @@ Welcome image Title Styling
     }
 
     .item-image-container img {
-        border-radius: 0%;
+        border-radius: 1%;
+    }
+
+    .related-container {
+        margin-left: 9.5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .related-card h3 {
-        text-align: left;
-        max-width: 60%;
+        max-width: max-content;
         margin-left: 5%;
+        font-size: 1rem;
+        margin-bottom: 5%;
     }
 
 
     .related-card img {
         margin: 0%;
-        width: 50%;
+        width: 100%;
         border-radius: 0%;
         margin-left: 5%;
 
@@ -960,7 +973,7 @@ Welcome image Title Styling
     }
 
     .related {
-        margin-left: 16%;   
+        margin-left: 15%;   
     }
 
     .related-card p{
@@ -1204,6 +1217,16 @@ footer {
         align-items: center;
         text-align: center;
         gap: 1.5rem;
+        padding: 0%;
+    }
+
+    .footer-logo-image {
+        width: 400px;
+        /* Adjust as per your logo's size */
+        height: auto;
+        margin: 0%;
+        padding: 0%;
+    
     }
 
     .footer-info {
@@ -1239,6 +1262,8 @@ footer {
     .scroll-top i {
         font-size: 18px;
     }
+
+    
 
 }
 

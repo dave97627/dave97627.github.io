@@ -293,9 +293,9 @@ function renderMenu(category) {
         <div class="menu-card" data-category="${item.category}">
             <a href="#view?category=${encodeURIComponent(item.category)}&title=${encodeURIComponent(item.title)}&price=${encodeURIComponent(item.price)}" class="menu-item-link">
             <img src="${item.image}" alt="${item.title}">
-            </a>
             <h3>${item.title}</h3>
             <a class="item-description">${item.description}</a>
+            </a>
             <p>AED ${item.price}</p>
         </div>
     `).join("");

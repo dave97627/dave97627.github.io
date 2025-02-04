@@ -19,145 +19,156 @@ function clearAllHash() {
 const pages = {
     home: `
     <div class="main-container" align="center" style="">
-        <!-- Left Section -->
-        <div class="left-section">
-            <div class="image-container">
-                <img src="assets/logo/logo-nobg.png" alt="Wahran Restaurant & Cafe Logo" class="logo-image" />
-                <img src="assets/images/bg/home.jpeg" alt="Restaurant" class="restaurant-image" />
-            </div>
-        </div>
-    
-    
-        <!-- Right Section -->
-        <div class="right-section">
-            <h3> An Oasis of Flavors
-                <br>in the Heart
-                <br>of Dubai
-            </h3>
-            <p>
-                An Algerian haven in the heart of Dubai, where Mediterranean charm meets vibrant tradition.
-                Discover a hidden gem blending cultural essence with exquisite dining.
-            </p>
-            <br>
-            <p class="tagline">
-                "Mediterranean Essence with Algerian Charm"
-            </p>
+    <!-- Left Section -->
+    <div class="left-section">
+        <div class="image-container">
+            <img src="assets/logo/logo-nobg.png" alt="Wahran Restaurant & Cafe Logo" class="logo-image" />
+            <img src="assets/images/home/entrance.jpeg" alt="Restaurant" class="restaurant-image" />
         </div>
     </div>
-    
-    <div class="mid-container">
-        <div class="midcontent-section">
-            <h2 class="title">
-                <span>AUTHENTIC</span>
-                <span>TIMELESS</span>
-                <span>EXQUISITE</span>
-            </h2>
-            <p class="description">
-                Embark on a culinary journey through the heart of Algeria. Our menu celebrates the rich flavors of
-                Mediterranean and Algerian traditions, featuring a selection of carefully curated seafood and local
-                delicacies.
-                A dining experience that brings together culture, passion, and taste.
-            </p>
+
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <h3> An Oasis of Flavors
+            <br>in the Heart
+            <br>of Dubai
+        </h3>
+        <p>
+            An Algerian haven in the heart of Dubai, where Mediterranean charm meets vibrant tradition.
+            Discover a hidden gem blending cultural essence with exquisite dining.
+        </p>
+        <br>
+        <p class="tagline">
+            "Mediterranean Essence with Algerian Charm"
+        </p>
+    </div>
+</div>
+
+<div class="mid-container">
+    <div class="midcontent-section">
+        <h2 class="title">
+            <span>AUTHENTIC</span>
+            <span>TIMELESS</span>
+            <span>EXQUISITE</span>
+        </h2>
+        <p class="description">
+            Embark on a culinary journey through the heart of Algeria. Our menu celebrates the rich flavors of
+            Mediterranean and Algerian traditions, featuring a selection of carefully curated dishes and local
+            delicacies.
+            A dining experience that brings together culture, passion, and taste.
+        </p>
+        <a href="#menu" onclick="clearHash();" data-page="menu">
             <button class="menu-btn">Explore Our Menu</button>
-        </div>
-        <div class="mid-image">
-            <img src="assets/images/home/mid-section.jpeg" alt="Mediterranean dishes collection">
-        </div>
+        </a>
     </div>
-        <div class="mid-container">
-            <div class="mid-image">
-                <div class="list-wrapper">
-                    <ul class="list">
-                        <li class="item">
-                            <div class="corousal-content">
-                                <img src="assets/images/home/c1.jpeg" alt="Mediterranean dishes collection">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="corousal-content">
-                                <img src="assets/images/home/c2.jpeg" alt="Mediterranean dishes collection">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="corousal-content">
-                                <img src="assets/images/home/c3.jpeg" alt="Mediterranean dishes collection">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="corousal-content">
-                                <img src="assets/images/home/c4.jpg" alt="Mediterranean dishes collection">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="corousal-content">
-                                <img src="assets/images/home/c5.jpeg" alt="Mediterranean dishes collection">
-                            </div>
-                        </li>
-                        <li class="item">
-                            <div class="corousal-content">
-                                <img src="assets/images/home/c6.jpg" alt="Mediterranean dishes collection">
-                            </div>
-                        </li>
-                    </ul>
-                    <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
-                    <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
-                </div>
-            </div>
-            <div class="midcontent-section">
-                <h2 class="title">
-                    <span>AUTHENTIC</span>
-                    <span>TIMELESS</span>
-                    <span>EXQUISITE</span>
-                </h2>
-                <p class="description">
-                    Embark on a culinary journey through the heart of Algeria. Our menu celebrates the rich flavors of
-                    Mediterranean and Algerian traditions, featuring a selection of carefully curated seafood and local
-                    delicacies.
-                    A dining experience that brings together culture, passion, and taste.
-                </p>
-                <button class="menu-btn">Explore Our Menu</button>
-            </div>
-        </div>
+    <div class="mid-image">
+        <img src="assets/images/home/mid-section.jpeg" alt="Mediterranean dishes collection">
+    </div>
+</div>
 
-
-        <div class="end-container">
-        <div class="base-image-wrapper">
-            <div class="black-background">
+<div class="end-container" style="background-color: white;">
+    <div class="base-image-wrapper">
+        <div class="black-background">
             <div class="text-content">
-                    <h2>Experience the True Taste of Fine Dining</h2>
-                    <p></p>
-                </div>
-            </div>
-            <div class="overlay-image-wrapper">
-                <img src="./assets/images/bg/algerian food.jpg" alt="Overlay image" class="overlay-image">
+                <h2>Experience the True Taste of Fine Dining</h2>
+                <p></p>
             </div>
         </div>
+        <div class="overlay-image-wrapper">
+            <img src="./assets/images/home/algerian-food.jpg" alt="Overlay image" class="overlay-image">
+        </div>
     </div>
+</div>
 
+<div class="mid-container">
+    <div class="mid-image">
+        <div class="list-wrapper">
+            <ul class="list">
+                <li class="item">
+                    <div class="corousal-content">
+                        <img src="assets/images/home/c1.jpeg" alt="Mediterranean dishes collection">
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="corousal-content">
+                        <img src="assets/images/home/c2.jpeg" alt="Mediterranean dishes collection">
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="corousal-content">
+                        <img src="assets/images/home/c3.jpeg" alt="Mediterranean dishes collection">
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="corousal-content">
+                        <img src="assets/images/home/c4.jpg" alt="Mediterranean dishes collection">
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="corousal-content">
+                        <img src="assets/images/home/c5.jpeg" alt="Mediterranean dishes collection">
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="corousal-content">
+                        <img src="assets/images/home/c6.jpg" alt="Mediterranean dishes collection">
+                    </div>
+                </li>
+            </ul>
 
+        </div>
     </div>
+    <div class="midcontent-section">
+        <h2 class="title">
+            <span>WARM</span>
+            <span>GENUINE</span>
+            <span>UNFORGETTABLE</span>
+        </h2>
+        <p class="description">
+            We offer a rich and flavorful dining experience
+            that brings the essence of Algeria to your table. With a menu inspired by
+            tradition and a welcoming atmosphere, every visit is a chance to enjoy
+            delicious food and great hospitality.
+        </p>
+        <a href="#menu" onclick="clearHash();" data-page="menu">
+            <button class="menu-btn">Explore Our Menu</button>
+        </a>
+    </div>
+</div>
     `,
     menu: `
-        <div id="menu">
-            <h2 align="center">Bon Appéti</h2>
-            <div id="menu-container" align="center">
+            <div id="menu">
+        <h2 align="center">Bon Appéti</h2>
+        <div id="menu-container" align="center">
             <select name="menu-category" id="menu-category" align="center">
-                <option value="All">All Items ♥</option>
+                <option value="All">View Categories</option>
+                <option value="All">All Items</option>
                 <option value="Most Popular">Most Popular 🔥</option>
-                <option value="Algerian Traditional">Algerian Traditional</option>
+                <option value="Special Dishes">Special Dishes</option>
+    
+                <!-- Starters -->
                 <option value="Salads">Salads</option>
                 <option value="Soups">Soups</option>
+    
+                <!-- Traditional Algerian Dishes -->
+                <option value="Algerian Traditional">Algerian Traditional ♥</option>
                 <option value="Couscous">Couscous</option>
                 <option value="Tadjines">Tadjines</option>
-                <option value="Special Dishes">Special Dishes</option>
-                <option value="International food">International food</option>
+    
+                <!-- International & Fast Food -->
+                <option value="International food">International Food</option>
                 <option value="Sandwiches">Sandwiches</option>
                 <option value="Tacos">Tacos</option>
                 <option value="Panini">Panini</option>
-                <option value="Traditional sweets">Traditional sweets</option>
+    
+                <!-- Desserts -->
+                <option value="Traditional sweets">Traditional Sweets</option>
+    
+                <!-- Beverages -->
                 <option value="Beverages">Beverages</option>
             </select>
-            </div>
+        </div>
           
 
             <div class="menu-container" id="menu-cards">
@@ -192,19 +203,13 @@ const pages = {
                     </div>
                     <div>
                         <div class="content">
-                            <h2 class="corousal">Email Us</h2>
-                            <span><a href="mailto:support@wahran-cafe.com">support@wahran-cafe.com</a></span>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="content">
                             <h2 class="corousal">For Delivery</h2>
                             <span><a href="tel:+9710509277053">+971 0509277053</a></span>
                         </div>
                     </div>
                     <div>
                         <div class="content">
-                            <h2 class="corousal">Catering</h2>
+                            <h2 class="corousal">For Catering</h2>
                             <span><a href="tel:+9710509277053">+971 0509277053</a></span>
                         </div>
                     </div>
@@ -286,7 +291,11 @@ function renderMenu(category) {
 
     // Filter the menu based on the selected category (either from the URL or the passed category)
     const menuCardsContainer = document.getElementById('menu-cards');
-    const filteredData = finalCategory === "All" ? menuData : menuData.filter(item => item.category === finalCategory);
+    const filteredData = finalCategory === "All"
+        ? menuData
+        : menuData.filter(item => Array.isArray(item.category)
+            ? item.category.includes(finalCategory)
+            : item.category === finalCategory);
 
     // Render the filtered menu items
     menuCardsContainer.innerHTML = filteredData.map(item => `
@@ -415,7 +424,8 @@ function displayRelatedDishes(category, currentTitle) {
     }
 
     // Filter menuData based on the category, but exclude the current item
-    const filteredData = menuData.filter(item => item.category === category && item.title !== currentTitle);
+    const filteredData = menuData.filter(item =>
+        item.category === category && item.title !== currentTitle);
 
     // Render the filtered menu items
     menuCardsContainer.innerHTML = filteredData.length > 0
@@ -533,16 +543,16 @@ function loadFooter() {
             <div class="footer-info">
                 <p>19A St Jawhara Metro Hotel ground Floor - Deira, Dubai</p>
                 <p>Open Daily From 12:00 PM - 1:00 AM</p>
-                <p>+971 0509277053 | <a href="mailto:info@x-group.com">info@x-group.com</a></p>
+                <p><a href="tel:+9710509277053">+971 0509277053</a> | <a href="mailto:info@x-group.com">info@x-group.com</a></p>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#home"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#home"><i class="fab fa-instagram"></i></a>
+                    <a href="#home"><i class="fab fa-twitter"></i></a>
                 </div>
-                <a href="#" class="privacy-policy">Privacy Policy</a>
+                <a href="#home" class="privacy-policy">Privacy Policy</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Wahran Restaurant & Cafe. All Rights Reserved</p>
+                <p>&copy; <span id="current-year"></span> Wahran Restaurant & Cafe. All Rights Reserved</p>
             </div>
             <div class="footer-buttons">
                 <a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
@@ -550,6 +560,12 @@ function loadFooter() {
         </div>  
     `;
     document.getElementById('footer').innerHTML = footerHTML;
+
+    //fetch current year for footer 
+    document.addEventListener("DOMContentLoaded", function () {
+        const yearSpan = document.getElementById("current-year");
+        yearSpan.textContent = new Date().getFullYear();
+    });
 
 
     // Scroll to Top functionality
@@ -575,10 +591,4 @@ function loadFooter() {
 // Initialize
 loadHeader();
 loadFooter();
-loadPage("menu");
-
-// Hamburger menu toggle
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
-
+loadPage("Home");

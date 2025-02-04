@@ -1,14 +1,23 @@
-const menuData = [
-    // dish images in assets/images/menu
-    // all dish images file names should be same as the title:
-    // all dish images 768X768 in JPG format
-    // Most popular
+// dish images in assets/images/menu
+// all dish images file names should be same as the title:
+// all dish images 768 X 768 in JPG format
+// Most popular- add most popular separately in the first section
 
+const menuData = [
+
+    // Most popular
     {
         "image": "assets/images/menu/algeriantraditional/Kesra Algerian.jpg",
         "category": "Most Popular",
         "title": "Kesra Algerian",
         "description": "Delicious dish with fresh ingredients.",
+        "price":"6"
+    },
+    {
+        "image": "assets/images/menu/algeriantraditional/Bourek Roll.jpg",
+        "category": "Most Popular",
+        "title": "Bourek Roll",
+        "description": "Crispy pastry filled with savory minced meat and spices.",
         "price":"6"
     },
     {
@@ -24,20 +33,6 @@ const menuData = [
         "title": "Hmiss Mechoui Salad",
         "description": "Roasted peppers and tomatoes with garlic and olive oil.",
         "price":"15"
-    },
-    {
-        "image": "assets/images/menu/algeriantraditional/Bourek Roll.jpg",
-        "category": "Algerian Traditional",
-        "title": "Bourek Roll",
-        "description": "Crispy pastry filled with savory minced meat and spices.",
-        "price":"6"
-    },
-    {
-        "image": "assets/images/menu/specialdishes/Lubia (White Bean) Dish.jpg",
-        "category": "Most Popular",
-        "title": "Lubia (White Bean) Dish",
-        "description": "A hearty white bean stew.",
-        "price":"22"
     },
     {
         "image": "assets/images/menu/soups/Chroba Frik.jpg",
@@ -192,7 +187,7 @@ const menuData = [
     },
     {
         "image": "assets/images/menu/specialdishes/Lubia (White Bean) Dish.jpg",
-        "category": "Special Dishes",
+        "category": ["Special Dishes","Most Popular"],
         "title": "Lubia (White Bean) Dish",
         "description": "A hearty white bean stew.",
         "price":"22"

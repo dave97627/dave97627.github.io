@@ -232,14 +232,14 @@ const pages = {
         </a>
     </div>
     <div class="social-item">
-        <a href="" target="#">
+        
             <img src="./assets/icons/tripadvisor.png" alt="">
-        </a>
+        
     </div>
     <div class="social-item">
-        <a href="" target="#">
+        
             <img src="./assets/icons/fb.png" alt="">
-        </a>
+        
     </div>
 </div>
 
@@ -543,7 +543,7 @@ function loadFooter() {
             <div class="footer-info">
                 <p>19A St Jawhara Metro Hotel ground Floor - Deira, Dubai</p>
                 <p>Open Daily From 12:00 PM - 1:00 AM</p>
-                <p><a href="tel:+9710509277053">+971 0509277053</a> | <a href="mailto:info@x-group.com">info@x-group.com</a></p>
+                <p><a href="tel:+9710509277053">+971 0509277053</a> | <a href="mailto:support@wahranrestaurant.com">support@wahranrestaurant.com</a></p>
                 <div class="social-icons">
                     <a href="#home"><i class="fab fa-facebook-f"></i></a>
                     <a href="#home"><i class="fab fa-instagram"></i></a>

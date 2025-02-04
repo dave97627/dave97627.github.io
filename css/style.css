@@ -1299,6 +1299,7 @@ footer {
     justify-content: center;
     height: 500px;
     gap: 10px;
+    overflow: hidden; /* Prevent extra scroll */
 
     >div {
         flex: 0 0 300px;

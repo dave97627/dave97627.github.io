@@ -1304,7 +1304,7 @@ footer {
     >div {
         flex: 0 0 300px;
         border-radius: 0.5rem;
-        transition: 0.5s ease-in-out;
+        transition: 0.5s ease;
         cursor: pointer;
         box-shadow: 1px 5px 15px #8f85a3;
         position: relative;
@@ -1315,11 +1315,11 @@ footer {
         }
 
         &:nth-of-type(2) {
-            background: url("../assets/images/contact/delivery.jpg") no-repeat 25% / cover;
+            background: url("../assets/images/contact/delivery.jpg") no-repeat 30% / cover;
         }
 
         &:nth-of-type(3) {
-            background: url("../assets/images/contact/catering.jpg") no-repeat 50% / cover;
+            background: url("../assets/images/contact/catering.jpg") no-repeat 30% / cover;
         }
 
         .content {
@@ -1333,13 +1333,13 @@ footer {
             flex-direction: column;
             height: 100%;
             justify-content: flex-start;
-            background: rgb(2, 2, 46);
-            background: linear-gradient(0deg,
-                    rgba(95, 95, 156, 0.676) 0%,
-                    rgba(24, 22, 22, 0.719) 100%);
             transform: translatey(100%);
-            transition: opacity 0.9s ease-in-out, transform 0.9s 0.2s;
+            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
             visibility: hidden;
+            box-shadow: 0 4px 6px rgba(7, 7, 7, 0.2);
+            /* Subtle shadow */
+            backdrop-filter: blur(10px);
+            /* Blurred background effect */
 
             span {
                 display: block;
@@ -1353,9 +1353,8 @@ footer {
 
         &:hover {
             flex: 0 0 250px;
-            box-shadow: 1px 3px 15px #998bb4;
+            box-shadow: 1px 3px 15px #59595a;
             transform: translatey(-30px);
-
         }
 
         &:hover .content {

@@ -1304,66 +1304,60 @@ footer {
     >div {
         flex: 0 0 300px;
         border-radius: 0.5rem;
-        transition: 0.5s ease;
+        transition: 0.5s ease-in-out;
         cursor: pointer;
         box-shadow: 1px 5px 15px #8f85a3;
         position: relative;
         overflow: hidden;
 
         &:nth-of-type(1) {
-            background: url("../assets/images/contact/reservation.jpg") no-repeat 30% / cover;
+            background: url("../assets/images/contact/reservation.jpg") no-repeat 50% / cover;
         }
 
         &:nth-of-type(2) {
-            background: url("../assets/images/contact/delivery.jpg") no-repeat 30% / cover;
+            background: url("../assets/images/contact/delivery.jpg") no-repeat 50% / cover;
         }
 
         &:nth-of-type(3) {
-            background: url("../assets/images/contact/catering.jpg") no-repeat 30% / cover;
+            background: url("../assets/images/contact/catering.jpg") no-repeat 50% / cover;
         }
 
         .content {
-            font-size: 11.5rem;
+            font-size: 1.5rem;
             color: white;
             font-weight: bolder;
             display: flex;
             align-items: center;
-            padding: 35px;
+            padding: 15px;
             opacity: 0;
             flex-direction: column;
             height: 100%;
             justify-content: flex-start;
-            transform: translatey(100%);
-            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-            visibility: hidden;
-            box-shadow: 0 4px 6px rgba(7, 7, 7, 0.2);
+            box-shadow: 0 4px 6px rgba(250, 249, 249, 0.2);
             /* Subtle shadow */
             backdrop-filter: blur(10px);
             /* Blurred background effect */
+            transform: translatey(100%);
+            transition: opacity 0.2s ease-in-out, transform 0.2s 0.2s;
+            visibility: hidden;
 
             span {
-                display: block;
+                display: flex;
                 margin-top: 5px;
                 font-size: 1.2rem;
-                color: white;
             }
-
-
         }
 
         &:hover {
-            flex: 0 0 250px;
+            flex: 0 0 350px;
             box-shadow: 1px 3px 15px #59595a;
             transform: translatey(-30px);
         }
 
         &:hover .content {
-            opacity: 100;
-            transform: translatey(10%);
+            opacity: 1;
+            transform: translatey(0%);
             visibility: visible;
-            color: white;
-            font-weight: bolder;
-
         }
     }
 }
